@@ -3,7 +3,7 @@ NOTA: HTML+ = HTML con estilos y JS
 FALTAN
 -HTML+ index
 -Navbar según nivel
--HTML+ login y registro
+
 -PHP login y registro
 -Forma de controlar actividades
 -Hacer base de datos
@@ -13,4 +13,7 @@ FALTAN
 -CRUD entradas
 
 EN PROCESO
+-HTML+ login y registro
+
+
 COMPLETADAS
