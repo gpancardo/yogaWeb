@@ -3,7 +3,7 @@ NOTA: HTML+ = HTML con estilos y JS
 FALTAN
 -HTML+ index
 -Navbar según nivel
-
+-Recuperar contraseña
 -PHP login y registro
 -Forma de controlar actividades
 -Hacer base de datos
