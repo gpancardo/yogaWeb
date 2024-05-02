@@ -2,11 +2,31 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <link rel="stylesheet" href="styles.css">
+    <title>Inicio de sesión en yogaweb</title>
 </head>
 <body>
-    
+
+    <header class="Titulo">
+        <h3>Inicio sesión en yogaweb</h3>
+    </header>
+    <div class="Formulario">
+            <hr> 
+            <div>
+
+             <label for="nombre_usuario">Nombre de ususario</label>
+            <input type="text" name="nombre_usuario" required maxlength="100" placeholder="Nombre de usuario">
+            <br><br>                
+                </div>
+                <label for="contrasena">Contraseña</label>
+                <input type="password" name="contrasena" maxlength="100" required placeholder="Contraseña">
+                <br><br>
+            </div>
+            <button type="submit" name="submit" >Iniciar</button>
+        </form>
+    </div>
+
+    <a href="olvidoContrasenia.html">Olvidé mi contraseña</a>
 </body>
 </html>
