@@ -1,12 +1,15 @@
 <?php
-$server = "localhost";
-$usuario = "";
-$contra = "";
+$host_db="127.0.0.1:3306";
+$user_db="root";
+$pass_db="";
+$name_db="usuarios";
 
-$conn = new mysqli($server, $usuario, $contra);
+$conexion = new mysqli($host_db,$user_db,$pass_db,$name_db);
 
-if ($conn->connect_error) {
-  die("Error: " . $conn->connect_error);
-}
-//Aquí debe ir una redirección a otra página
+if($conexion->connect_error){
+    echo "no hay conexion";
+    
+}else{
+    
+} 
 ?>
