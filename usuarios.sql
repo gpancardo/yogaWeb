@@ -1,8 +1,3 @@
-DROP SCHEMA IF EXISTS `YogaWeb`;
-CREATE SCHEMA IF NOT EXISTS `YogaWeb` DEFAULT CHARACTER SET utf8 COLLATE utf8_spanish_ci;
-
-USE `YogaWeb`;
-
 CREATE TABLE `usuarios` (
   `id` int(11) NOT NULL AUTO_INCREMENT,
   `nombre_usuario` varchar(50) NOT NULL,
