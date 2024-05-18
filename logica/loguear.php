@@ -15,9 +15,9 @@ if ($array['contar'] > 0) {
 
     $_SESSION['usermane'] = $nombre_usuario;
 
-    header("location: ../Principal.php");
+    header("Location: ../principal.php");
 } else {
 
-    header("location: ../indexError.php");
+    header("Location: ../error.html");
 }
 ?>
