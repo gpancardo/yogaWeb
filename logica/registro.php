@@ -12,12 +12,15 @@ if ($conn) {
     
     if ($conn->query($sql) === TRUE) {
         header("Location: inicioSesion.html");
+        exit();
     } else {
         header("Location: error.html");
+        exit();
     }
     
     $conn->close();
 } else {
     header("Location: error.html");
+    exit();
 }
 ?>
