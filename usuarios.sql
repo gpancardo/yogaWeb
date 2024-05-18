@@ -34,5 +34,3 @@ INSERT INTO `usuarios` (`id`, `nombre_usuario`,`telefono`,`edad`,`progreso`,`pas
 INSERT INTO `usuarios` (`id`, `nombre_usuario`,`telefono`,`edad`,`progreso`,`password`)  VALUES (18, 'Ernesto','5542756475','18','0', '123456');
 INSERT INTO `usuarios` (`id`, `nombre_usuario`,`telefono`,`edad`,`progreso`,`password`)  VALUES (19, 'Felix','5674279064','18','0', '123456');
 INSERT INTO `usuarios` (`id`, `nombre_usuario`,`telefono`,`edad`,`progreso`,`password`)  VALUES (20, 'Ximena','5542235195','16','0', '123456');
-
-

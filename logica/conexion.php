@@ -1,4 +1,6 @@
 <?php
+include 'credenciales.php';
+
 $host_db=$host;
 $user_db=$user;
 $pass_db=$pass;
