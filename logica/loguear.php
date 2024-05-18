@@ -13,7 +13,7 @@ $array = mysqli_fetch_array($consulta);
 
 if ($array['contar'] > 0) {
 
-    $_SESSION['usermane'] = $nombre_usuario;
+    $_SESSION['username'] = $nombre_usuario;
 
     header("Location: ../principal.php");
 } else {
