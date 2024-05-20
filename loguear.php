@@ -16,10 +16,10 @@ if ($conexion->connect_error) {
 $sql = "INSERT INTO usuarios (nombre_usuario, telefono, edad, password) VALUES ('$nombre', '$num', '$edad', '$password')";
 
 if ($conexion->query($sql) === TRUE) {
-    header('Location: ../index.html');
+    header('Location: index.html');
     exit();
 } else {
-    header('Location: ../error.html');
+    header('Location: error.html');
     exit();
 }
 
