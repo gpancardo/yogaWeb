@@ -1,23 +1,27 @@
 <?php
-require 'conexion.php';
-session_start();
+include_once 'credenciales.php';
 
-$nombre_usuario = $_POST['nombre_usuario'];
+$nombre = $_POST['nombre'];
+$num = $_POST['num'];
+$edad = $_POST['edad'];
 $password = $_POST['password'];
 
-$q = "SELECT COUNT(*) as contar from usuarios where nombre_usuario= '$nombre_usuario' and password = '$password'";
+$conexion = new mysqli($host, $user, $pass, $name);
 
-$consulta = mysqli_query($conexion, $q);
-
-$array = mysqli_fetch_array($consulta);
-
-if ($array['contar'] > 0) {
-
-    $_SESSION['username'] = $nombre_usuario;
-
-    header("Location: ../principal.php");
-} else {
-
-    header("Location: ../error.html");
+if ($conexion->connect_error) {
+    header('Location: ../error.html');
+    exit();
 }
+
+$sql = "INSERT INTO usuarios (nombre_usuario, telefono, edad, password) VALUES ('$nombre', '$num', '$edad', '$password')";
+
+if ($conexion->query($sql) === TRUE) {
+    header('Location: ../index.html');
+    exit();
+} else {
+    header('Location: ../error.html');
+    exit();
+}
+
+$conexion->close();
 ?>

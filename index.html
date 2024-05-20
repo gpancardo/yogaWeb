@@ -3,8 +3,64 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link type="text/css" rel="stylesheet" href="css/materialize.min.css"  media="screen,projection"/>
     <title>Yogaweb</title>
 </head>
 <body>
+    <nav>
+        <div class="nav-wrapper">
+          <a href="#!" class="brand-logo">YW</a>
+          <a href="#" data-target="mobile-demo" class="sidenav-trigger"><i class="material-icons">menu</i></a>
+          <ul class="right hide-on-med-and-down">
+            <li><a href="index.html">Yogaweb</a></li>
+            <li><a href="index.html#info">Sobre mí</a></li>
+            <li><a href="inicioSesion.html">Iniciar sesión</a></li>
+            <li><a href="registro.html">Crear cuenta</a></li>
+          </ul>
+        </div>
+      </nav>
+    
+      <ul class="sidenav" id="mobile-demo">
+        <li><a href="index.html">Yogaweb</a></li>
+        <li><a href="index.html#info">Sobre nosotros</a></li>
+        <li><a href="inicioSesion.html">Iniciar sesión</a></li>
+        <li><a href="registro.html">Crear cuenta</a></li>
+      </ul>
+
+      <div class="carousel">
+        <a class="carousel-item" href="#info"><img src="i4.jpeg"></a>
+        <a class="carousel-item" href="#info"><img src="i1.jpeg"></a>
+        <a class="carousel-item" href="#info"><img src="i2.jpeg"></a>
+        <a class="carousel-item" href="#info"><img src="i3.jpeg"></a>
+        <a class="carousel-item" href="#info"><img src="i5.jpeg"></a>
+      </div>
+
+      <h1 style="text-align: center;">Yogaweb</h1>
+
+      <div class="row">
+        <img style="text-align: center;" id="info" class="col s8 offset-s2" src="presentacion.jpeg" alt="Presentación de la instructora">
+      </div>
+      <div class="row">
+        <button onclick="" style="text-align: center; color:black;" class="info col s8 offset-s2 btn">Curso de Introducción</button>
+      </div>
+      
+      <footer style="background-color: #84807E; color: white;"> Yogaweb - 2024 - México</footer>
+      <script type="text/javascript" src="js/materialize.min.js"></script>
+      <script>
+        document.addEventListener('DOMContentLoaded', function() {
+
+        var sidenavOptions = {};
+        var carouselOptions = {};
+
+        var carouselElems = document.querySelectorAll('.carousel');
+        var carouselInstances = M.Carousel.init(carouselElems, carouselOptions);
+
+        var sidenavElems = document.querySelectorAll('.sidenav');
+        var sidenavInstances = M.Sidenav.init(sidenavElems, sidenavOptions);
+      });
+      
+      </script>
+      
 </body>
 </html>

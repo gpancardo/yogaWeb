@@ -1,10 +1,59 @@
 <!DOCTYPE html>
 <html lang="es">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Inicio de sesión - Yogaweb</title>
-</head>
-<body>
-</body>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+        <link type="text/css" rel="stylesheet" href="css/materialize.min.css"  media="screen,projection"/>
+        <title>Yogaweb</title>
+    </head>
+    <body>
+        <nav>
+            <div class="nav-wrapper">
+              <a href="#!" class="brand-logo">YW</a>
+              <a href="#" data-target="mobile-demo" class="sidenav-trigger"><i class="material-icons">menu</i></a>
+              <ul class="right hide-on-med-and-down">
+                <li><a href="index.html">Yogaweb</a></li>
+                <li><a href="index.html#info">Sobre mí</a></li>
+                <li><a href="inicioSesion.html">Iniciar sesión</a></li>
+                <li><a href="registro.html">Crear cuenta</a></li>
+              </ul>
+            </div>
+          </nav>
+        
+          <ul class="sidenav" id="mobile-demo">
+            <li><a href="index.html">Yogaweb</a></li>
+            <li><a href="index.html#info">Sobre nosotros</a></li>
+            <li><a href="inicioSesion.html">Iniciar sesión</a></li>
+            <li><a href="registro.html">Crear cuenta</a></li>
+          </ul>
+    
+          <h1 style="text-align: center;">Iniciar Sesión</h1>
+
+          <div class="row">
+            <form class="col s8 offset-s2" action="" method="post">
+                <div class="input-field">
+                    <label for="phone">Teléfono</label>
+                    <input type="tel" id="num" name="num" required>
+                </div>
+                <div class="input-field">
+                    <label for="password">Password</label>
+                    <input type="password" id="password" name="password" required>
+                </div>
+                <button style="color: black; text-align: center;" class="btn" type="submit" name="action">Submit
+            </form>
+          </div>
+    
+          <footer style="position: absolute; bottom: 0; width: 100%; text-align: center; background-color: #84807E; color: white;"> Yogaweb - 2024 - México</footer>
+      
+    
+          <script type="text/javascript" src="js/materialize.min.js"></script>
+          <script>
+          document.addEventListener('DOMContentLoaded', function() {
+            var elems = document.querySelectorAll('.sidenav');
+            var instances = M.Sidenav.init(elems, options);
+          });
+          </script>
+          
+    </body>
 </html>

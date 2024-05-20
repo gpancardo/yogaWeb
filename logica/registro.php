@@ -1,26 +1,27 @@
 <?php
-require 'conexion.php';
+include_once 'credenciales.php';
 
-$nombre_usuario = $_POST['nombre_usuario'];
-$password = $_POST['password'];
+$nombre = $_POST['nombre'];
+$num = $_POST['num'];
 $edad = $_POST['edad'];
-$telefono = $_POST['telefono'];
-$progreso = 0;
+$password = $_POST['password'];
 
-if ($conn) {
-    $sql = "INSERT INTO usuarios (nombre_usuario, telefono, edad, progreso, password) VALUES ('$nombre_usuario', '$telefono', $edad, '$progreso', '$password')";
-    
-    if ($conn->query($sql) === TRUE) {
-        header("Location: ../inicioSesion.html");
-        exit(); 
-    } else {
-        header("Location: ../error.html");
-        exit(); 
-    }
-    
-    $conn->close();
-} else {
-    header("Location: ../error.html");
-    exit(); 
+$conexion = new mysqli($host, $user, $pass, $name);
+
+if ($conexion->connect_error) {
+    header('Location: ../error.html');
+    exit();
 }
+
+$sql = "INSERT INTO usuarios (nombre_usuario, telefono, edad, password) VALUES ('$nombre', '$num', '$edad', '$password')";
+
+if ($conexion->query($sql) === TRUE) {
+    header('Location: ../index.html');
+    exit();
+} else {
+    header('Location: ../error.html');
+    exit();
+}
+
+$conexion->close();
 ?>
