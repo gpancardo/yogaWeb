@@ -1,7 +1,8 @@
 # Proyecto YogaWeb
 
 ## Modelo Entidad-Relación
-![Logo de YogaWeb](images/imagenrocas.jpg)
+![Logo de YogaWeb](imagenes/imagenrocas.jpg)
+
 La base de datos **“YogaWeb”** es creada para gestionar usuarios de una aplicación de Yoga. Incluye una tabla de usuarios con varios campos para almacenar información como nombre de usuario, teléfono, edad, contraseña, progreso y la fecha de registro. Cada usuario tiene un identificador único (id) que se incrementa automáticamente con cada nuevo registro. La base de datos está configurada para utilizar el conjunto de caracteres UTF-8 y está optimizada para el idioma español.
 
 - **Id**: Entero de 11 dígitos, no nulo, auto-incremental, es la clave primaria.
