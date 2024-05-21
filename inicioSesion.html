@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+        <link type="text/css" rel="stylesheet" href="css/materialize.min.css"  media="screen,projection"/>
+        <title>Yogaweb</title>
+    </head>
+    <body>
+      <nav>
+        <div class="nav-wrapper">
+          <a href="#!" class="brand-logo">YW</a>
+          <a href="#" data-target="mobile-demo" class="sidenav-trigger"><i class="material-icons">menu</i></a>
+          <ul class="right hide-on-med-and-down">
+            <li><a href="index.html">Yogaweb</a></li>
+            <li><a href="index.html#info">Sobre mí</a></li>
+            <li><a href="inicioSesion.html">Iniciar sesión</a></li>
+            <li><a href="registro.html">Crear cuenta</a></li>
+          </ul>
+        </div>
+      </nav>
+    
+      <ul class="sidenav" id="mobile-demo">
+        <li><a href="index.html">Yogaweb</a></li>
+        <li><a href="index.html#info">Sobre nosotros</a></li>
+        <li><a href="inicioSesion.html">Iniciar sesión</a></li>
+        <li><a href="registro.html">Crear cuenta</a></li>
+      </ul>
+    
+          <h1 style="text-align: center;">Iniciar Sesión</h1>
+
+          <div class="row">
+            <form action="login.php" method="POST">
+              <label for="telefono">Teléfono:</label>
+              <input type="text" id="telefono" name="telefono" required><br><br>
+              <label for="password">Password:</label>
+              <input type="password" id="password" name="password" required><br><br>
+              <button style="color: black;" class="btn" type="submit">Iniciar Sesión</button>
+          </form>
+          </div>
+    
+          <footer style="position: absolute; bottom: 0; width: 100%; text-align: center; background-color: #84807E; color: white;"> Yogaweb - 2024 - México</footer>
+      
+          <script type="text/javascript" src="js/materialize.min.js"></script>
+          <script>
+              document.addEventListener('DOMContentLoaded', function() {
+    var elems = document.querySelectorAll('.sidenav');
+    var instances = M.Sidenav.init(elems, options);
+  });
+          </script>
+          
+    </body>
+</html>
