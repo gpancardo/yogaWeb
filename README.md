@@ -1,6 +1,5 @@
-# Proyecto YogaWeb
+# Proyecto Habilidades Directivas.
 ## yogaWeb
-Proyecto Habilidades Directivas.
 
 Costos
 Hosting: infinity free $0 (gratuito) con base de datos (limitada)
