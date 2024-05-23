@@ -35,7 +35,7 @@ function incrementarProgreso($telefono) {
 
 if ($_SERVER['REQUEST_METHOD'] === 'POST' && isset($_POST['incrementar'])) {
     if (incrementarProgreso($telefono)) {
-        header('Location: principal.php');
+        header('Location: Principal.php');
         exit();
     } else {
         echo "Error al incrementar el progreso.";
@@ -80,14 +80,13 @@ $conn->close();
         if ($progreso == 0) {
             echo '<div class="content">
                     <div class="video-container">
-                        <video width="320" height="240" controls>
+                    <video width="320" height="240" controls>
                             <source src="videos/otro.mp4" type="video/mp4">
                             Tu navegador no soporta este tipo de vídeo, intenta con otro navegador o en otro dispositivo.
                         </video>
-                    </div>
                     <p><b>Hirshasana</b></p>
                     <p>Esta postura invertida también se conoce como el "rey de las asanas" porque esta postura de yoga se considera un maestro en la curación de muchas enfermedades. Shirshasana es una de las asanas más efectivas para el cuerpo y la mente.</p>
-                    <form action="principal.php" method="post">
+                    <form action="Principal.php" method="post">
                         <button class="btn" type="submit" name="incrementar">Incrementar Progreso</button>
                     </form>
                   </div>';
@@ -101,7 +100,7 @@ $conn->close();
                     </div>
                     <p><b>Ardha Baddha Padmottanasana</b></p>
                     <p>Ardha es un término sánscrito que se traduce como «medio», baddha significa «atado», padma «loto» y uttana quiere decir «estiramiento intenso». En esta variante de Vrkasana, es necesario tener entrenado el medio loto y la postura del árbol.</p>
-                    <form action="principal.php" method="post">
+                    <form action="Principal.php" method="post">
                         <button class="btn" type="submit" name="incrementar">Incrementar Progreso</button>
                     </form>
                   </div>';
@@ -115,7 +114,7 @@ $conn->close();
                     </div>
                     <p><b>Astangasana & Shirshasana</b></p>
                     <p>En sánscrito, ashta significa ocho y anga significa parte. De ahí que en Ashtanga Namaskar, el cuerpo esté en contacto con el suelo (como muestra de respeto) en ocho puntos, que son: los dos pies, las dos rodillas, las dos manos, el pecho y la barbilla. En la postura de Shirshasana se apoyan los antebrazos, las manos y la cabeza en el suelo, quedando el tronco y las piernas en vertical.</p>
-                    <form action="principal.php" method="post">
+                    <form action="Principal.php" method="post">
                         <button class="btn" type="submit" name="incrementar">Incrementar Progreso</button>
                     </form>
                   </div>';
@@ -129,7 +128,7 @@ $conn->close();
                     </div>
                     <p><b>Cuenco alquímico</b></p>
                     <p>Curado con la energía de la Madre Ballena de esta Tierra, este cuenco ha estado por Selvas, ríos y mares, es el encargado de mover las aguas que conforman tus cuerpos sutiles.</p>
-                    <form action="principal.php" method="post">
+                    <form action="Principal.php" method="post">
                         <button class="btn" type="submit" name="incrementar">Incrementar Progreso</button>
                     </form>
                   </div>';

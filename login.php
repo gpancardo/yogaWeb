@@ -16,7 +16,7 @@ $result = $conexion->query($sql);
 if ($result->num_rows > 0) {
     session_start();
     $_SESSION['telefono'] = $telefono;
-    header('Location: principal.php');
+    header('Location: Principal.php');
     exit();
 } else {
     header('Location: error.html');
