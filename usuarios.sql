@@ -1,7 +1,7 @@
 CREATE TABLE `usuarios` (
   `id` int(11) NOT NULL AUTO_INCREMENT,
   `nombre_usuario` varchar(50) NOT NULL,
-  `telefono` int(10) NOT NULL,
+  `telefono` bigint(10) NOT NULL,
   `edad` int(2) NOT NULL,
   `progreso` int(3) NOT NULL,
   `password` varchar(20) NOT NULL,
